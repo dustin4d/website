@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Dustin's website">
   <meta name="author" content="Dustin">
   <meta name="keywords" content="web app, modern, responsive">
-  <title>My Web Application</title>
+
+  <title>Dustin's Website</title>
+
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <!-- CSS Reset for consistent styling across browsers -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <!-- Your custom styles -->
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
+
   <!-- Google Fonts (Quantico) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  </head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+
+  <!-- Pull in scripts for vanta to work-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js" defer></script>
+
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.12" defer></script>
+
+</head>
 
 <body id="bg">
   <!-- Main content container -->
@@ -34,6 +45,8 @@
     </nav>
   </main>
 </body>
+
+<!-- Vanta background -->
 <script>
   VANTA.GLOBE({
     el: "html",
@@ -49,6 +62,5 @@
     backgroundColor: 0x0
   })
 </script>
-
 
 </html>
